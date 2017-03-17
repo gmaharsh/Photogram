@@ -1,0 +1,14 @@
+<% include partials/header %>
+<div class="container" style="text-align:center">
+
+   <h2 style="text-align:center">Add A New Photo to the collections</h2>
+<form action="/campgrounds" method="POST">
+ 
+       <input class="form-control" type="text" name="name" placeholder="Enter Name Of The Occasion"><br/>
+       <input class="form-control" type="text" name="image" placeholder="Enter The Link Of The Image"><br/>
+       <button class="btn btn-lg  btn-default btn-block">Post This Image</button>
+</form>
+
+<a href="/campgrounds">Go Back To Campground</a>
+</div>
+<% include partials/footer %>

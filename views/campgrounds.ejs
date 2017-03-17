@@ -1,0 +1,27 @@
+<% include partials/header %>
+
+<div class = "container">
+   <header class = "jumbotron">
+       <div class = "container">
+             <h2><strong>This are few of the photos of nishi in different places</strong></h2>
+             <p>Check her every different attire</p>
+              <p>
+                 <a  class="btn btn-primary btn-large" href="/new"> Add New Pictures</a>
+              </p>
+        </div>
+    </header>
+
+<div class="row text-center" style="display:flex;flex-wrap:wrap;">
+<% campground.forEach(function(camp){ %>
+	<div class="col-md-3 col-sm-6">
+    <div class="thumbnail">
+           <img src = "<%= camp.image %>">
+           <div class="caption">
+           <h4><%= camp.name %></h4>
+      </div>
+  </div>
+	</div>
+<% }); %>
+</div>
+</div>
+<% include partials/footer %>
